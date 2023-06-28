@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Handwritten Digit Classifier</h1>
+    <div class="container">
+        <div class="draw-title">Draw<br>a digit:</div>
+        <div class="canvas-div">
+            <canvas id="canvas" width="112px" height="112px"></canvas>
+        </div>
+
+        <div class="buttons">
+            <button class="button" id="predictButton">Predict</button>
+            <button class="button" id="clearButton">Clear</button>
+        </div>
+
+        <div class="prediction-container">
+            <h3 class="prediction-heading">Prediction:</h3>
+            <div class="prediction-label">
+                <div class="prediction" id="prediction">?</div>
+                <div class="confidence" id="confidence">?</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
