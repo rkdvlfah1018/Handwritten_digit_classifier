@@ -125,7 +125,7 @@ function predictDigit(e){
     }).then(response =>{
         var {prediction, confidence} = response.data;
         predictionEl.textContent = prediction;
-        confidenceEl.textContent = '${parseInt(parseFloat(confidence) * 100)}%'
+        confidenceEl.textContent = `${parseInt(parseFloat(confidence) * 100)}%`
     });
 }
 
