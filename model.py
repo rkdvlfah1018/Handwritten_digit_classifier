@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 import tflite_runtime.interpreter as tflite
 
-interpreter = tflite.Interpreter(model_path="digit_classifier.tflite")
+interpreter = tflite.Interpreter(model_path="digit_classifier2.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
